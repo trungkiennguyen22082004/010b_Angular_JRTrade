@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "jaderabbittrade": {
+      "hosting": {
+        "jrt": [
+          "jaderabbittrade"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "jaderabbittrade"
+  }
+}

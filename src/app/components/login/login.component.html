@@ -1,0 +1,54 @@
+<!--Web-based-->
+<div class="login-section">
+
+    <div class="login-section-container">
+        <div class="login-section-container-appLogo"></div>
+
+        <div class="login-section-container-header">
+            <h1 class="login-section-container-header-title">Welcome back!</h1>
+        </div>
+
+        <div class="login-section-container-function">
+            <p class="login-section-container-function-emailTitle">Email</p>
+            <mat-form-field class="login-section-container-emailField" appearance="outline">
+                <input class="login-section-container-emailField-emailInput" type="email" #userEmail matInput placeholder="Enter your email" required>
+            </mat-form-field>
+            <p class="login-section-container-function-passwordTitle">Password</p>
+            <mat-form-field class="login-section-container-passwordField" appearance="outline">
+                <input class="ogin-section-container-passwordField-passwordInput" type="password" matInput #userPassword placeholder="Enter your password" required>
+            </mat-form-field>
+        </div>
+
+        <p class="login-section-container-forgotPasswordLink"><a routerLink="/forgotpassword">Forgot your password?</a></p>
+
+        <button class="login-section-container-button" mat-raised-button color="primary">Log in</button>
+        <p class="login-section-container-signupLink">Don't have an account? <a routerLink="/signup">Sign up</a> now</p>
+    </div>
+
+    <div class="login-section-background"></div>
+</div>
+
+<!--Mobile-based-->
+<div class="mobile-login-section">
+    
+    <div class="mobile-login-section-container">
+        <div class="mobile-login-section-container-header">
+            <h1 class="mobile-login-section-container-header-title">Welcome back!</h1>
+        </div>
+        <div class="login-section-container-function">
+            <p class="login-section-container-function-emailTitle">Email</p>
+            <mat-form-field class="login-section-container-emailField" appearance="outline">
+                <input class="login-section-container-emailField-emailInput" type="email" #userEmail matInput placeholder="Enter your email" required>
+            </mat-form-field>
+            <p class="login-section-container-function-passwordTitle">Password</p>
+            <mat-form-field class="login-section-container-passwordField" appearance="outline">
+                <input class="login-section-container-passwordField-passwordInput" type="password" matInput #userPassword placeholder="Enter your password" required>
+            </mat-form-field>
+        </div>
+
+        <p class="mobile-login-section-container-forgotPasswordLink"><a routerLink="/forgotpassword">Forgot your password?</a></p>
+        <button class="login-section-container-button" mat-raised-button color="primary">Log in</button>
+        <p class="login-section-container-signupLink">Don't have an account? <a routerLink="/signup">Sign up</a> now</p>
+    </div>
+
+</div>
