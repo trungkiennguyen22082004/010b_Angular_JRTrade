@@ -1,0 +1,104 @@
+.signup-section-container-button 
+{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    background-color: indigo !important;
+}
+
+.signup-section-container-function-nameFields
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 10% 0 0 0;
+}
+
+.signup-section-container-function-nameFields-firstNameSection
+{
+    width: 45%;
+    margin-right: 5%;
+    align-self: flex-start;
+}
+
+.signup-section-container-function-nameFields-lastNameSection
+{
+    width: 45%;
+    margin-left: 5%;
+    align-self: flex-end;
+}
+
+.signup-section-container-function-emailSection-emailTitle, .signup-section-container-function-passwordSection-passwordTitle
+{
+    color: black;
+    margin-top: 1px;
+    margin-bottom: 2px;
+}
+
+.signup-section-container-function-nameFields-firstNameSection-firstNameField, .signup-section-container-function-nameFields-lastNameSection-lastNameField, .signup-section-container-function-emailSection-emailField, .signup-section-container-function-passwordSection-passwordField
+{
+    width: 100%;
+}
+
+.signup-section-container-function-nameFields-firstNameSection-firstNameField mat-error, .signup-section-container-function-nameFields-lastNameSection-lastNameField mat-error, .signup-section-container-emailField mat-error, .signup-section-container-passwordField mat-error 
+{
+    color: red;
+    font-size: 10px;
+    margin-top: -1%;
+    margin-left: -2%;
+}
+
+.signup-section-container-function-nameFields-firstNameSection-firstNameField-firstNameInput, .signup-section-container-function-nameFields-lastNameSection-lastNameField-lastNameInput, .signup-section-container-function-emailSection-emailField-emailInput, .signup-section-container-function-passwordSection-passwordField-passwordInput
+{
+    color: black !important;
+}
+
+/* Web-based */
+@media (min-width: 500px)
+{
+    .signup-section 
+    {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    
+        background-image: url("src\assets\images\purple_background_2.jpg");
+    
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .signup-section-container
+    {
+        position: absolute;
+        width: 30%;
+        top: 50%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        padding: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+
+        background-color: rgb(224, 211, 234);
+        border-radius: 5%;
+        border: 1px solid;
+
+        filter: drop-shadow(10px 20px 50px var(--shadow-color));
+        --shadow-color: hsla(311, 53%, 59%, 0.9);
+    }
+
+    .signup-section-container-header-title 
+    {
+        color: rgb(255, 166, 0);
+        font-size: 3vw;
+        font-weight: bolder;
+
+        text-align: center;
+    }
+}
+
+/* Mobile-based */
+@media only screen and (max-width: 499px) 
+{
+}

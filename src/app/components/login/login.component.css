@@ -17,12 +17,12 @@
     margin-bottom: 2px;
 }
 
-.login-section-container-emailField, .login-section-container-passwordField
+.login-section-container-function-emailField, .login-section-container-function-passwordField
 {
     width: 100%;
 }
 
-.login-section-container-emailField mat-error, .login-section-container-passwordField mat-error 
+.login-section-container-function-emailField mat-error, .login-section-container-function-passwordField mat-error 
 {
     color: red;
     font-size: 10px;
@@ -30,17 +30,19 @@
     margin-left: -2%;
 }
 
-.login-section-container-emailField-emailInput, .login-section-container-passwordField-passwordInput 
+.login-section-container-function-emailField-emailInput, .login-section-container-function-passwordField-passwordInput 
 {
-    color: white !important;
+    color: black !important;
 }
 
 .login-section-container-signupLink
 {
     text-align: center;
+    color: black;
 }
 
-input::placeholder {
+input::placeholder 
+{
     color: gray !important;
 }
 
@@ -104,8 +106,11 @@ input::placeholder {
 
     .login-section-container-header-title 
     {
+        margin-bottom: 8%;
+
         color: rgb(255, 166, 0);
         font-size: 3vw;
+        font-weight: bolder;
 
         text-align: center;
     }
@@ -174,6 +179,7 @@ input::placeholder {
 
         color: rgb(255, 166, 0);
         font-size: 8vw;
+        font-weight: bolder;
 
         text-align: center;
     }

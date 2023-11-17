@@ -10,15 +10,20 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getDatabase, provideDatabase } from '@angular/fire/database';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { HomeComponent } from './components/home/home.component';
 import { ForgotpasswordComponent } from './components/forgotpassword/forgotpassword.component';
+
+import { environment } from 'src/environments/environment.development';
 
 @NgModule
 ({
@@ -35,6 +40,8 @@ import { ForgotpasswordComponent } from './components/forgotpassword/forgotpassw
         BrowserModule,
         AppRoutingModule,
 
+        FormsModule, 
+
         MatInputModule,
         MatCheckboxModule,
         MatButtonModule,
@@ -45,6 +52,10 @@ import { ForgotpasswordComponent } from './components/forgotpassword/forgotpassw
         provideAuth(() => getAuth()),
         provideFirestore(() => getFirestore()),
         provideDatabase(() => getDatabase()),
+
+        AngularFireModule.initializeApp(environment.firebase),
+        AngularFirestoreModule,
+
         NoopAnimationsModule
     ],
     providers: [],

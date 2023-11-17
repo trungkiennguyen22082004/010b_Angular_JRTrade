@@ -21,11 +21,12 @@ const routes: Routes =
         path: 'forgotpassword', component: ForgotpasswordComponent, title: 'Forgot Password - JRTrade'
     },
     {
-        path: 'home', component: HomeComponent
+        path: 'home', component: HomeComponent, title: "Home - JRTrade"
     }
 ];
 
-@NgModule({
+@NgModule
+({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })

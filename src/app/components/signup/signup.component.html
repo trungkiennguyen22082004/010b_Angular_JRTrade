@@ -1,1 +1,43 @@
-<p>signup works!</p>
+<div class="signup-section">
+
+    <div class="signup-section-container">
+        <div class="signup-section-container-header">
+            <h1 class="signup-section-container-header-title">Welcome to JR Trade</h1>
+        </div>
+        <div class="signup-section-container-function">
+            <div class="signup-section-container-function-nameFields">
+                <div class="signup-section-container-function-nameFields-firstNameSection">
+                    <p class="signup-section-container-function-nameFields-firstNameSection-firstNameTitle">First Name</p>
+                    <mat-form-field class="signup-section-container-function-nameFields-firstNameSection-firstNameField" appearance="outline">
+                        <input class="signup-section-container-function-nameFields-firstNameSection-firstNameField-firstNameInput" type="firstName" #userFName matInput [(ngModel)]="firstName" placeholder="Enter your first name" required>
+                    </mat-form-field>
+                </div>
+
+                <div class="signup-section-container-function-nameFields-lastNameSection">
+                    <p class="signup-section-container-function-nameFields-lastNameSection-lastNameTitle">Last Name</p>
+                    <mat-form-field class="signup-section-container-function-nameFields-lastNameSection-lastNameField" appearance="outline">
+                        <input class="signup-section-container-function-nameFields-lastNameSection-lastNameField-lastNameInput" type="lastName" #userLName matInput [(ngModel)]="lastName" placeholder="Enter your given name" required>
+                    </mat-form-field>
+                </div>
+            </div>  
+
+            <div class="signup-section-container-function-emailSection">
+                <p class="signup-section-container-function-emailSection-emailTitle">Email</p>
+                <mat-form-field class="signup-section-container-function-emailSection-emailField" appearance="outline">
+                    <input class="signup-section-container-function-emailSection-emailField-emailInput" type="email" #userEmail matInput [(ngModel)]="email" placeholder="Enter your email" required>
+                </mat-form-field>
+            </div>
+
+            <div class="signup-section-container-function-passwordSection">
+                <p class="signup-section-container-function-passwordSection-passwordTitle">Password</p>
+                <mat-form-field class="signup-section-container-function-passwordSection-passwordField" appearance="outline">
+                    <input class="signup-section-container-function-passwordSection-passwordField-passwordInput" type="password" #userPassword matInput [(ngModel)]="password" placeholder="Enter your password" required>
+                </mat-form-field>
+            </div>
+        </div>
+
+        <button class="signup-section-container-button" mat-raised-button color="primary" (click)="signup()">Sign up</button>
+        <p class="signup-section-container-loginLink">Already have an account? <a routerLink="/login">Log in</a> now!</p>
+    </div>
+
+</div>
